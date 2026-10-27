@@ -1,0 +1,6 @@
+[package]
+version = "0.1.0"
+name = { en = "Tarot", zh = "塔罗" }
+summary = { en = "Draw tarot cards into a spread; the AI does the reading", zh = "抽塔罗牌，排牌阵；解读交给 AI" }
+author = "SHORiN-KiWATA"
+icon = "sparkles"
