@@ -227,6 +227,8 @@ def main():
         args = json.load(sys.stdin)
     except json.JSONDecodeError as exc:
         fail(f"参数不是 JSON：{exc}")
+    if not isinstance(args, dict):
+        fail("参数要是一个 JSON 对象")
     spread, positions = positions_of(args)
     reversal = args.get("reversal", 0.3)
     if isinstance(reversal, bool) or not isinstance(reversal, (int, float)) or not 0 <= reversal <= 1:
